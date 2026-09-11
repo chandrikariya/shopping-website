@@ -1,0 +1,198 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - ShopEase</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html">ShopEase</a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="cart.html">🛒 Cart</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CART TITLE ================= -->
+    <section class="page-title">
+
+        <h1>Shopping Cart</h1>
+
+        <p>Review your products before checkout.</p>
+
+    </section>
+
+
+    <!-- ================= CART SECTION ================= -->
+    <section class="cart-section">
+
+        <!-- Products will be displayed here using JavaScript -->
+        <div id="cartItems">
+
+            <p class="empty-cart">
+                Your cart is empty.
+            </p>
+
+        </div>
+
+
+        <!-- ================= CART SUMMARY ================= -->
+        <div class="cart-summary">
+
+            <h2>Order Summary</h2>
+
+            <div class="summary-row">
+
+                <span>Subtotal:</span>
+
+                <span id="subtotal">
+                    ₹0
+                </span>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>Delivery:</span>
+
+                <span id="delivery">
+                    ₹0
+                </span>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="summary-total">
+
+                <span>Total:</span>
+
+                <span id="cartTotal">
+                    ₹0
+                </span>
+
+            </div>
+
+
+            <!-- Proceed to Payment -->
+            <button
+                class="checkout-btn"
+                onclick="goToPayment()">
+
+                Proceed to Payment
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTINUE SHOPPING ================= -->
+    <section class="continue-shopping">
+
+        <a href="categories.html" class="shop-btn">
+            Continue Shopping
+        </a>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>ShopEase</h3>
+
+                <p>
+                    Your one-stop online shopping destination.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Account</h3>
+
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="cart.html">🛒 Cart</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>
+                    Email: support@shopease.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 ShopEase. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

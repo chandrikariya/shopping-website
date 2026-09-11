@@ -1,0 +1,387 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - Products</title>
+
+    <!-- Connecting CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+
+        <div class="logo">
+            🛍️ ShopEase
+        </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">🛒 Cart</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Products Page -->
+    <main class="products-page">
+
+        <h1>Our Products</h1>
+
+        <p class="products-intro">
+            Choose a category and explore our products.
+        </p>
+
+
+        <!-- Category Buttons -->
+        <div class="category-buttons">
+
+            <button onclick="showCategory('all')">
+                All
+            </button>
+
+            <button onclick="showCategory('mobiles')">
+                📱 Mobiles
+            </button>
+
+            <button onclick="showCategory('clothes')">
+                👗 Clothes
+            </button>
+
+            <button onclick="showCategory('footwear')">
+                👟 Footwear
+            </button>
+
+        </div>
+
+
+        <!-- ================= MOBILES ================= -->
+
+        <section id="mobiles" class="product-category">
+
+            <h2>📱 Mobiles</h2>
+
+            <div class="product-container">
+
+
+                <!-- Mobile 1 -->
+                <div class="product-card" data-category="mobiles">
+
+                    <img src="mobile1.jpg" alt="Smartphone">
+
+                    <h3>Samsung Galaxy</h3>
+
+                    <p class="price">₹25,999</p>
+
+                    <p>
+                        Powerful smartphone with excellent camera
+                        and performance.
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Samsung Galaxy', 25999, 'images/mobile1.jpg')">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow('Samsung Galaxy', 25999, 'images/mobile1.jpg')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+
+                <!-- Mobile 2 -->
+                <div class="product-card" data-category="mobiles">
+
+                    <img src="mobile2.jpg" alt="Smartphone">
+
+                    <h3>iPhone</h3>
+
+                    <p class="price">₹59,999</p>
+
+                    <p>
+                        Premium smartphone with a powerful
+                        processor and camera.
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('iPhone', 59999, 'images/mobile2.jpg')">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow('iPhone', 59999, 'images/mobile2.jpg')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+
+                <!-- Mobile 3 -->
+                <div class="product-card" data-category="mobiles">
+
+                    <img src="mobile3.jpg" alt="Smartphone">
+
+                    <h3>OnePlus</h3>
+
+                    <p class="price">₹32,999</p>
+
+                    <p>
+                        Fast performance with a smooth display
+                        and long-lasting battery.
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('OnePlus', 32999, 'images/mobile3.jpg')">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow('OnePlus', 32999, 'images/mobile3.jpg')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CLOTHES ================= -->
+
+        <section id="clothes" class="product-category">
+
+            <h2>👗 Clothes</h2>
+
+            <div class="product-container">
+
+
+                <!-- Clothes 1 -->
+                <div class="product-card" data-category="clothes">
+
+                    <img src="clothes1.jpg" alt="Dress">
+
+                    <h3>Women's Dress</h3>
+
+                    <p class="price">₹1,499</p>
+
+                    <p>
+                        Stylish and comfortable dress for
+                        everyday occasions.
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Women Dress', 1499, 'images/clothes1.jpg')">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow('Women Dress', 1499, 'images/clothes1.jpg')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+
+                <!-- Clothes 2 -->
+                <div class="product-card" data-category="clothes">
+
+                    <img src="clothes2.jpg" alt="T-Shirt">
+
+                    <h3>Casual T-Shirt</h3>
+
+                    <p class="price">₹699</p>
+
+                    <p>
+                        Comfortable casual T-shirt suitable
+                        for everyday wear.
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Casual T-Shirt', 699, 'images/clothes2.jpg')">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow('Casual T-Shirt', 699, 'images/clothes2.jpg')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+
+                <!-- Clothes 3 -->
+                <div class="product-card" data-category="clothes">
+
+                    <img src="clothes3.jpg" alt="Jeans">
+
+                    <h3>Denim Jeans</h3>
+
+                    <p class="price">₹1,299</p>
+
+                    <p>
+                        Classic denim jeans with a comfortable
+                        fit and stylish design.
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Denim Jeans', 1299, 'images/clothes3.jpg')">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow('Denim Jeans', 1299, 'images/clothes3.jpg')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FOOTWEAR ================= -->
+
+        <section id="footwear" class="product-category">
+
+            <h2>👟 Footwear</h2>
+
+            <div class="product-container">
+
+
+                <!-- Footwear 1 -->
+                <div class="product-card" data-category="footwear">
+
+                    <img src="footwear1.jpg" alt="Sports Shoes">
+
+                    <h3>Sports Shoes</h3>
+
+                    <p class="price">₹1,999</p>
+
+                    <p>
+                        Lightweight and comfortable shoes
+                        for everyday activities.
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Sports Shoes', 1999, 'images/footwear1.jpg')">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow('Sports Shoes', 1999, 'images/footwear1.jpg')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+
+                <!-- Footwear 2 -->
+                <div class="product-card" data-category="footwear">
+
+                    <img src="footwear2.jpg" alt="Casual Shoes">
+
+                    <h3>Casual Shoes</h3>
+
+                    <p class="price">₹1,599</p>
+
+                    <p>
+                        Stylish casual shoes designed for
+                        comfortable everyday use.
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Casual Shoes', 1599, 'images/footwear2.jpg')">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow('Casual Shoes', 1599, 'images/footwear2.jpg')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+
+                <!-- Footwear 3 -->
+                <div class="product-card" data-category="footwear">
+
+                    <img src="footwear3.jpg" alt="Sneakers">
+
+                    <h3>Classic Sneakers</h3>
+
+                    <p class="price">₹2,299</p>
+
+                    <p>
+                        Trendy sneakers with a comfortable
+                        design for casual wear.
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        onclick="addToCart('Classic Sneakers', 2299, 'images/footwear3.jpg')">
+                        Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-now"
+                        onclick="buyNow('Classic Sneakers', 2299, 'images/footwear3.jpg')">
+                        Buy Now
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 ShopEase. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Connecting JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

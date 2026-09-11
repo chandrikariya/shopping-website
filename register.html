@@ -1,0 +1,164 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register - ShopEase</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>ShopEase</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+
+    <!-- Registration Section -->
+    <section class="login-section">
+
+        <div class="login-container">
+
+            <h2>Create Your Account</h2>
+
+            <p>Register to start shopping on ShopEase</p>
+
+            <form onsubmit="registerUser(event)">
+
+                <!-- Full Name -->
+                <label for="fullName">Full Name</label>
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- Email -->
+                <label for="registerEmail">Email</label>
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- Phone Number -->
+                <label for="registerPhone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="registerPhone"
+                    placeholder="Enter your phone number"
+                    pattern="[0-9]{10}"
+                    maxlength="10"
+                    required
+                >
+
+
+                <!-- Address -->
+                <label for="registerAddress">Address</label>
+                <textarea
+                    id="registerAddress"
+                    placeholder="Enter your address"
+                    rows="4"
+                    required
+                ></textarea>
+
+
+                <!-- Password -->
+                <label for="registerPassword">Password</label>
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create a password"
+                    minlength="6"
+                    required
+                >
+
+
+                <!-- Confirm Password -->
+                <label for="confirmPassword">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Re-enter your password"
+                    minlength="6"
+                    required
+                >
+
+
+                <!-- Terms -->
+                <div class="remember">
+                    <input type="checkbox" id="terms" required>
+
+                    <label for="terms">
+                        I agree to the Terms and Conditions
+                    </label>
+                </div>
+
+
+                <!-- Register Button -->
+                <button type="submit">
+                    Register
+                </button>
+
+            </form>
+
+
+            <!-- Login Link -->
+            <div class="register-link">
+                <p>
+                    Already have an account?
+                    <a href="login.html">Login Now</a>
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+            <h3>ShopEase</h3>
+
+            <p>
+                Your one-stop online shopping website.
+            </p>
+        </div>
+
+        <p class="copyright">
+            © 2026 ShopEase. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,355 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopEase - Online Shopping</title>
+
+    <!-- Connect common CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <div class="logo">
+            <a href="index.html">ShopEase</a>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="cart.html">🛒 Cart</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= SEARCH BAR ================= -->
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for products..."
+        >
+
+        <button onclick="searchProduct()">Search</button>
+
+    </section>
+
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Everything You Need in One Place</h1>
+
+            <p>
+                Shop electronics, clothes, footwear,
+                accessories and much more.
+            </p>
+
+            <a href="categories.html" class="shop-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="categories">
+
+        <h2>Shop By Category</h2>
+
+        <div class="category-container">
+
+            <!-- Electronics -->
+            <div class="category-card">
+
+                <div class="category-icon">💻</div>
+
+                <h3>Electronics</h3>
+
+                <p>
+                    Laptops, mobiles, headphones
+                    and more.
+                </p>
+
+                <a href="electronics.html">
+                    View Products
+                </a>
+
+            </div>
+
+
+            <!-- Clothes -->
+            <div class="category-card">
+
+                <div class="category-icon">👕</div>
+
+                <h3>Clothes</h3>
+
+                <p>
+                    T-shirts, shirts, jeans,
+                    dresses and more.
+                </p>
+
+                <a href="clothes.html">
+                    View Products
+                </a>
+
+            </div>
+
+
+            <!-- Footwear -->
+            <div class="category-card">
+
+                <div class="category-icon">👟</div>
+
+                <h3>Footwear</h3>
+
+                <p>
+                    Sneakers, shoes, sandals
+                    and more.
+                </p>
+
+                <a href="footwear.html">
+                    View Products
+                </a>
+
+            </div>
+
+
+            <!-- Accessories -->
+            <div class="category-card">
+
+                <div class="category-icon">👜</div>
+
+                <h3>Accessories</h3>
+
+                <p>
+                    Bags, watches, wallets,
+                    sunglasses and more.
+                </p>
+
+                <a href="accessories.html">
+                    View Products
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+    <section class="featured-products">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    💻
+                </div>
+
+                <h3>Smart Laptop</h3>
+
+                <p class="price">₹49,999</p>
+
+                <button
+                    onclick="addToCart('Smart Laptop', 49999)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    👕
+                </div>
+
+                <h3>Casual T-Shirt</h3>
+
+                <p class="price">₹799</p>
+
+                <button
+                    onclick="addToCart('Casual T-Shirt', 799)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    👟
+                </div>
+
+                <h3>Running Shoes</h3>
+
+                <p class="price">₹1,999</p>
+
+                <button
+                    onclick="addToCart('Running Shoes', 1999)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <div class="product-image">
+                    ⌚
+                </div>
+
+                <h3>Smart Watch</h3>
+
+                <p class="price">₹2,499</p>
+
+                <button
+                    onclick="addToCart('Smart Watch', 2499)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OFFER SECTION ================= -->
+    <section class="offer">
+
+        <h2>Special Offers 🎉</h2>
+
+        <p>
+            Get amazing discounts on selected products.
+        </p>
+
+        <a href="categories.html" class="shop-btn">
+            Explore Offers
+        </a>
+
+    </section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="why-us">
+
+        <h2>Why Shop With Us?</h2>
+
+        <div class="why-container">
+
+            <div>
+                <h3>🚚 Fast Delivery</h3>
+                <p>Quick and reliable delivery.</p>
+            </div>
+
+            <div>
+                <h3>🔒 Secure Shopping</h3>
+                <p>Your information is protected.</p>
+            </div>
+
+            <div>
+                <h3>💰 Best Prices</h3>
+                <p>Great products at affordable prices.</p>
+            </div>
+
+            <div>
+                <h3>📞 Customer Support</h3>
+                <p>We are here to help you.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>ShopEase</h3>
+
+                <p>
+                    Your one-stop online shopping
+                    destination.
+                </p>
+            </div>
+
+
+            <div>
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+
+            <div>
+                <h3>Account</h3>
+
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+
+            <div>
+                <h3>Contact</h3>
+
+                <p>Email: support@shopease.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 ShopEase. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Connect common JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

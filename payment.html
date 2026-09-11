@@ -1,0 +1,182 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Payment</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>ShopEase</h1>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+
+        <div class="payment-container">
+
+            <h2>Payment</h2>
+            <p>Complete your order securely</p>
+
+            <form onsubmit="makePayment(event)">
+
+                <!-- Customer Name -->
+                <label for="customerName">Full Name</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+
+                <!-- Email -->
+                <label for="paymentEmail">Email</label>
+                <input
+                    type="email"
+                    id="paymentEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <!-- Phone -->
+                <label for="paymentPhone">Phone Number</label>
+                <input
+                    type="tel"
+                    id="paymentPhone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+
+
+                <!-- Address -->
+                <label for="address">Delivery Address</label>
+                <textarea
+                    id="address"
+                    rows="4"
+                    placeholder="Enter your delivery address"
+                    required
+                ></textarea>
+
+
+                <!-- Payment Method -->
+                <label for="paymentMethod">Payment Method</label>
+
+                <select id="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="upi">UPI</option>
+                    <option value="card">Credit / Debit Card</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+
+
+                <!-- UPI -->
+                <div id="upiDetails" class="payment-details">
+
+                    <label for="upiId">UPI ID</label>
+
+                    <input
+                        type="text"
+                        id="upiId"
+                        placeholder="example@upi"
+                    >
+
+                </div>
+
+
+                <!-- Card -->
+                <div id="cardDetails" class="payment-details">
+
+                    <label for="cardNumber">Card Number</label>
+
+                    <input
+                        type="text"
+                        id="cardNumber"
+                        placeholder="Enter card number"
+                    >
+
+
+                    <label for="expiry">Expiry Date</label>
+
+                    <input
+                        type="text"
+                        id="expiry"
+                        placeholder="MM/YY"
+                    >
+
+
+                    <label for="cvv">CVV</label>
+
+                    <input
+                        type="password"
+                        id="cvv"
+                        placeholder="Enter CVV"
+                    >
+
+                </div>
+
+
+                <!-- Total -->
+                <div class="payment-total">
+
+                    <h3>Total Amount</h3>
+
+                    <p id="paymentTotal">₹0</p>
+
+                </div>
+
+
+                <!-- Payment Button -->
+                <button type="submit" class="checkout-btn">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+            <h3>ShopEase</h3>
+            <p>Your one-stop online shopping website.</p>
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 ShopEase. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
